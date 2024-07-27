@@ -1,0 +1,10 @@
+<%- include('partials/footer'); -%>
+
+<form action="/reset-password" method="POST">
+    <input type="hidden" name="token" value="<%= token %>" />
+    <label for="newPassword">New Password</label>
+    <input type="password" name="newPassword" required />
+    <button type="submit">Reset Password</button>
+</form>
+
+<%- include('partials/footer'); -%>
